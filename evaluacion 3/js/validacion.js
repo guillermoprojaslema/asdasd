@@ -1,69 +1,61 @@
-
-
 function enviandoformulario() {
 
-    var objfecha = document.getElementById('fecha');
-    var objpeso = document.getElementById("peso");
-    var objaltura = document.getElementById("altura")
-    var objsexo_children = document.getElementById("sexo").children;
+    var objFecha = document.getElementById('fecha_de_evaluacion');
+    var objPeso = document.getElementById("peso");
+    var objAltura = document.getElementById("altura")
+    var objGenderChildren = document.getElementById("sexo").children;
 
 
     var mensajesError = [];
 
-    if (objpeso.value != "" && objaltura != "") {
-        imcin = (objpeso.value / (objaltura.value * objaltura.value));
-        imc.innerHTML = imcin
+    if (objPeso.value != "" &&
+        objPeso.value != null &&
+        objAltura.value != "" &&
+        objAltura.value != null) {
+        imcin = (objPeso.value / (objAltura.value * objAltura.value));
         console.log("Calculando imc");
 
 
-        if (objaltura.value >= 0 && objpeso.value <= 0) {
+        if (objAltura.value >= 0 && objPeso.value <= 0) {
             mensajesError.push(" ingrese un numero mayor a 0");
             alert("peso y altura deben ser mayor a 0");
         }
 
 
+        for (i = 1; i < objGenderChildren.length; i++) {
+            var objOption = objGenderChildren[i];
 
-
-
-        for (i = 0; i > objsexo_children.length; i++) {
-            var option = objsexo_children.children[i];
-
-            if (option.value == "") {
+            if (objOption.value == "") {
                 alert("porfavor seleccione su sexo");
+            }
 
+
+            /*Para mujer*/
+            if (objOption.value == "1") {
 
             }
-            if (option.value == "2") {
+
+            /*Para Hombre*/
+            if (objOption.value == "2") {
+
+                suImc = 'Su imc es ', imc;
 
                 if (imcin < 20) {
-                    alert("usted esta bajo peso)";
+                    alert("usted esta bajo peso".suImc);
                 }
 
                 if (imcin >= 20 && imcin <= 27) {
-                    alert("Su peso es normal");
+                    alert("Su peso es normal ".suImc);
                 }
-                if (imcin >= 27 && imcin <= 30){
-                    alert("usted tiene sobrepeso")
+                if (imcin >= 27 && imcin <= 30) {
+                    alert("usted tiene sobrepeso ".suImc)
                 }
-
-
-
-
-
-
             }
-
-
-
-
-
-
-
-
 
         }
 
     }
+}
 
 
 

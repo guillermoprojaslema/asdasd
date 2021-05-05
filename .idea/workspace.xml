@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6772f7cb-4b2e-48bc-8f34-31615bba7b10" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Actividad calificada 3 - EJE03Tarea/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Actividad calificada 3 - EJE03Tarea/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actividad calificada 3 - EJE03Tarea/validacion.js" beforeDir="false" afterPath="$PROJECT_DIR$/Actividad calificada 3 - EJE03Tarea/js/validacion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluacion 3/formulario.html" beforeDir="false" afterPath="$PROJECT_DIR$/evaluacion 3/formulario.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluacion 3/js/validacion.js" beforeDir="false" afterPath="$PROJECT_DIR$/evaluacion 3/js/validacion.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,40 +12,43 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Actividad calificada 3 - EJE03Tarea/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="26">
-                  <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Actividad calificada 3 - EJE03Tarea/js/validacion.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="424">
-                  <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluacion 3/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-18">
+              <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluacion 3/formulario.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="59" column="79" selection-start-line="59" selection-start-column="79" selection-end-line="59" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/evaluacion 3/js/validacion.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>form</find>
       <find>Nombre</find>
       <find>valorCredito</find>
+      <find>imc</find>
+      <find>fecha</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -58,6 +61,8 @@
         <option value="$PROJECT_DIR$/Actividad calificada 3 - EJE03Tarea/style.css" />
         <option value="$PROJECT_DIR$/Actividad calificada 3 - EJE03Tarea/js/validacion.js" />
         <option value="$PROJECT_DIR$/Actividad calificada 3 - EJE03Tarea/index.html" />
+        <option value="$PROJECT_DIR$/evaluacion 3/formulario.html" />
+        <option value="$PROJECT_DIR$/evaluacion 3/js/validacion.js" />
       </list>
     </option>
   </component>
@@ -71,7 +76,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -82,7 +86,13 @@
             <path>
               <item name="xmars" type="b2602c69:ProjectViewProjectNode" />
               <item name="xmars" type="462c0819:PsiDirectoryNode" />
-              <item name="Actividad calificada 3 - EJE03Tarea" type="462c0819:PsiDirectoryNode" />
+              <item name="evaluacion 3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmars" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmars" type="462c0819:PsiDirectoryNode" />
+              <item name="evaluacion 3" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xmars" type="b2602c69:ProjectViewProjectNode" />
@@ -101,6 +111,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -142,17 +153,18 @@
       <updated>1619474872500</updated>
       <workItem from="1619474876974" duration="103000" />
       <workItem from="1619474980971" duration="3666000" />
+      <workItem from="1620175243214" duration="2543000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3769000" />
+    <option name="totallyTimeSpent" value="6312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="26" width="1930" height="1035" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11513859" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26226014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -179,16 +191,8 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.css" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.css" />
     <entry file="file://$PROJECT_DIR$/Actividad calificada 3 - EJE03Tarea/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -196,17 +200,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Actividad calificada 3 - EJE03Tarea/js/validacion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Actividad calificada 3 - EJE03Tarea/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="59" column="60" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Actividad calificada 3 - EJE03Tarea/js/validacion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluacion 3/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluacion 3/allmightpng.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluacion 3/formulario.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="59" column="79" selection-start-line="59" selection-start-column="79" selection-end-line="59" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluacion 3/js/validacion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
         </state>
       </provider>
     </entry>

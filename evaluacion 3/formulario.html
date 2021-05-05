@@ -27,23 +27,25 @@
                         <div class="container form">
                             <div class="form-row">
                                 <div class="col-md-6 mb-3">
-                                    <label for="fecha de evaluacion">Fecha de evaluacion</label>
-                                    <input type="date" class="form-control is-valid" id="fecha" value=""
-                                        placeholder="Fecha de evaluacion" min="2021-05-05" max="2021-05-05">
+                                    <label for="fecha_de_evaluacion">Fecha de evaluacion</label>
+                                    <input type="date" class="form-control is-valid" id="fecha_de_evaluacion" value="2021-05-05"
+                                        placeholder="Fecha de evaluacion" disabled>
                                     <div class="valid-feedback">
                                     </div>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-md-6 mb-3">
+                                    <label for="peso">Ingrese su peso en Kg</label>
                                     <input type="number" class="form-control is-valid" id="peso" value=""
-                                        placeholder="Ingrese su peso">
+                                        placeholder="Ej: 71" step="0.1">
                                     <div class="valid-feedback">
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-3">
+                                    <label for="peso">Ingrese su altura en metros</label>
                                     <input type="number" class="form-control is-valid" id="altura" value=""
-                                        placeholder="Ingrese su altura">
+                                        placeholder="Ej: 1.77" step="0.01">
                                     <div class="valid-feedback">
 
                                     </div>
@@ -54,9 +56,9 @@
                                     <div class="form-group">
                                         <label for="Sexo"> Sexo</label>
                                         <select class="form-control" id="sexo">
-                                            <option value="Escoja su sexo "> Escoja su sexo</option>
-                                            <option value="Masculino">Masculino</option>
-                                            <option value="Femenino">Femenino</option>
+                                            <option disabled> Escoja su sexo</option>
+                                            <option value="2">Masculino</option>
+                                            <option value="1">Femenino</option>
                                         </select>
                                     </div>
                                 </div>
