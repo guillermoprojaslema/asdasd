@@ -38,17 +38,17 @@ function enviandoformulario() {
             /*Para Hombre*/
             if (objOption.value == "2") {
 
-                suImc = 'Su imc es ', imc;
+                suImc = 'Su imc es ' + imc;
 
                 if (imcin < 20) {
-                    alert("usted esta bajo peso".suImc);
+                    alert("usted esta bajo peso" + suImc);
                 }
 
                 if (imcin >= 20 && imcin <= 27) {
-                    alert("Su peso es normal ".suImc);
+                    alert("Su peso es normal " + suImc);
                 }
                 if (imcin >= 27 && imcin <= 30) {
-                    alert("usted tiene sobrepeso ".suImc)
+                    alert("usted tiene sobrepeso " + suImc)
                 }
             }
 
