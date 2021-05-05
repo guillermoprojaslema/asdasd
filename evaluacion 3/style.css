@@ -1,0 +1,41 @@
+
+.banner {
+
+height: 150px;
+background-image: url(bannercanva.png)
+}
+
+.body {
+background-color: rgb(255, 235, 52);
+   
+}
+
+.font-weight-bold{
+    font-size: 50px;
+    position: relative;
+    right: 40px;
+    top: 10px;
+}
+
+.banner2{
+    height: 200px;
+    width: 1000px;
+    position: relative;
+    left: 80px;
+
+    background-image: url(banner2.png);
+
+}
+
+.card {
+    width: 350px;
+    position: relative;
+    bottom: 16px;
+}
+
+.font-weight-bolder{
+
+    background-color: white;
+    font-size: 30px;
+
+}

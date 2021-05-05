@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script type="text/javascript" src="js/validacion.js"></script>
+
+
+    <title>Formulario MCI</title>
+</head>
+
+<body>
+    <div class="container my-container3">
+        <div class="jumbotron for">
+            <div class="row">
+                <div class="col-12">
+                    <h2>
+                        <p> Ingresa tus datos para calcular </p><br>
+                    </h2>
+                    <form class="formulario" id="formulario" action="#" onsubmit="enviandoformulario()">
+                        <div class="container form">
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="fecha de evaluacion">Fecha de evaluacion</label>
+                                    <input type="date" class="form-control is-valid" id="fecha" value=""
+                                        placeholder="Fecha de evaluacion" min="2021-05-05" max="2021-05-05">
+                                    <div class="valid-feedback">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="number" class="form-control is-valid" id="peso" value=""
+                                        placeholder="Ingrese su peso">
+                                    <div class="valid-feedback">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="number" class="form-control is-valid" id="altura" value=""
+                                        placeholder="Ingrese su altura">
+                                    <div class="valid-feedback">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="Sexo"> Sexo</label>
+                                        <select class="form-control" id="sexo">
+                                            <option value="Escoja su sexo "> Escoja su sexo</option>
+                                            <option value="Masculino">Masculino</option>
+                                            <option value="Femenino">Femenino</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" onclick="enviandoformulario" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                    <div id="error"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
