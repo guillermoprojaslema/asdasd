@@ -117,14 +117,14 @@
                             </div>
                         </div><br>
                         <div class="col-md-2 mb-8">
-                            <input class="form-check-input" type="radio" name="radios" id="Pesos"
-                                value="Clp">
-                            <label class="form-check-label" for="inlineRadio1">Pesos</label>
+                            <label class="form-check-label" for="Pesos">Pesos</label>
+                            <input class="form-check-input" type="radio" name="currency" onchange="currencyChange()" id="Pesos"
+                                   value="clp">
                         </div>
                         <div class="col-md-2 mb-8">
-                            <input class="form-check-input" type="radio" name="radios" id="Uf"
-                                value="unidadF">
-                            <label class="form-check-label" for="inlineRadio2">UF</label>
+                            <label class="form-check-label" for="Uf">UF</label>
+                            <input class="form-check-input" type="radio" name="currency" onchange="currencyChange()" id="Uf"
+                                value="uf">
                             <div class="valid-feedback">
                             </div>
                         </div>
@@ -133,7 +133,7 @@
                         <div class="col-md-8 mb-3">
                             <div class="form-group">
                                 <label for="tipoInversion"> Tipo de inversion</label>
-                                <select class="form-control" id="Deposito" >
+                                <select class="form-control" id="Deposito" name="TipoDeposito" onchange="checkDepositType()">
                                     <option disabled selected > Escoja tipo de Deposito</option>
                                     <option value="1">Plazo Fijo</option>
                                     <option value="2">Plazo renovable</option>
@@ -141,7 +141,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-primary" onclick="calculandoganancia()" type="submit">Enviar</button>
+                    <button class="btn btn-primary" onsubmit="calculandoganancia()" type="submit">Enviar</button>
                 </div>
             </form>
         </div>
