@@ -3,15 +3,16 @@ function checkDepositType() {
     // Plazo Fijo
     if (depositValue == 1) {
         // Desbloquear UF
-        document.getElementById("Uf").style.visibility = "visible";
+        document.getElementById("uf_label").style.visibility = "visible";
     }
     // Renovable
     else {
         // Esconder el UF
-        document.getElementById("Uf").style.visibility = "hidden";
+        document.getElementById("uf_label").style.visibility = "hidden";
 
         //Esto elige pesos. De esa forma, UF se oculta, y si tiene valor, �ste es reemplazado por el valor de Pesos
-        document.querySelector('input[currency="Pesos"]:checked');
+        checkBox = document.getElementById("Pesos");
+        checkBox.checked = true;
     }
 }
 
