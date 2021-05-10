@@ -2,7 +2,7 @@
 .banner {
 
 height: 150px;
-background-image: url(bannercanva.png)
+background-color: red
 }
 
 .body {
@@ -13,8 +13,9 @@ background-color: rgb(255, 235, 52);
 .font-weight-bold{
     font-size: 50px;
     position: relative;
-    right: 40px;
-    top: 10px;
+   left: 300px;
+   bottom: 30px;
+
 }
 
 .banner2{
@@ -28,14 +29,28 @@ background-color: rgb(255, 235, 52);
 }
 
 .card {
-    width: 350px;
+    border-style: groove;
+    width: 558px;
     position: relative;
     bottom: 16px;
+    right: 31px;
+    top: 30px;
 }
 
 .font-weight-bolder{
-
     background-color: white;
     font-size: 30px;
 
+
 }
+
+.medio {
+    background-color: red;
+   width: 560px;
+   position: relative;
+   left: 370px;
+}
+
+.titulo{
+    color: white;
+   justify-content: center;

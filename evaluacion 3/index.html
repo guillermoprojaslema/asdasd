@@ -19,6 +19,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/validacion.js"></script>
 
     <link rel="stylesheet" href="style.css">
 
@@ -43,61 +44,197 @@
         <div class="row align-items-center">
             <div class="col-12">
                 <div class="jumbotron banner2">
-                    <a href="contactanos.html"><button type="button" class="btn btn-danger">Contactanos</button></a>
+                    <button type="button" class="btn btn-danger">Contactanos</button>
                 </div>
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="jumbotron medio">
+                <h2 class="titulo">
+                    <p> Selecciona usuario y llena los datos para obtener imc </p><br>
+                </h2>
 
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Ricardo el fortachon | Rut:16-475-685-5
+                            </button>
+                        </h5>
+                    </div>
 
-    <p class="font-weight-bolder"> Lista de usuarios</p>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <form class="formulario" id="formulario" action="#" onsubmit="enviandoformulario()">
+                                <div class="container form">
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="fecha_de_evaluacion">Fecha de evaluacion</label>
+                                            <input type="date" class="form-control is-valid" id="fecha_de_evaluacion"
+                                                value="2021-05-05" placeholder="Fecha de evaluacion" disabled>
+                                            <div class="valid-feedback">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="peso">Ingrese su peso en Kg</label>
+                                            <input type="number" class="form-control is-valid" id="peso" value=""
+                                                placeholder="Ej: 71" step="0.1">
+                                            <div class="valid-feedback">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="peso">Ingrese su altura en metros</label>
+                                            <input type="number" class="form-control is-valid" id="altura" value=""
+                                                placeholder="Ej: 1.77" step="0.01">
+                                            <div class="valid-feedback">
 
-    <div class="card">
-        <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                    aria-controls="collapseOne">
-                    Ricardo el fortachon | Rut:16-475-685-5
-                </button>
-            </h5>
-        </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="form-group">
+                                                <label for="Sexo"> Sexo</label>
+                                                <select class="form-control" id="sexo">
+                                                    <option disabled selected> Escoja su sexo</option>
+                                                    <option value="2">Masculino</option>
+                                                    <option value="1">Femenino</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" 
+                                        type="submit">Enviar</button>
+                                </div>
+                            </form>
 
-        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-               Atleta por naturaleza
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                Rambo metralleta | Rut:18-845-284-9
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <form class="formulario" id="formulario" action="#" onsubmit="enviandoformulario()">
+                                <div class="container form">
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="fecha_de_evaluacion">Fecha de evaluacion</label>
+                                            <input type="date" class="form-control is-valid" id="fecha_de_evaluacion"
+                                                value="2021-05-05" placeholder="Fecha de evaluacion" disabled>
+                                            <div class="valid-feedback">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="peso">Ingrese su peso en Kg</label>
+                                            <input type="number" class="form-control is-valid" id="peso" value=""
+                                                placeholder="Ej: 71" step="0.1">
+                                            <div class="valid-feedback">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="peso">Ingrese su altura en metros</label>
+                                            <input type="number" class="form-control is-valid" id="altura" value=""
+                                                placeholder="Ej: 1.77" step="0.01">
+                                            <div class="valid-feedback">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="form-group">
+                                                <label for="Sexo"> Sexo</label>
+                                                <select class="form-control" id="sexo">
+                                                    <option disabled selected> Escoja su sexo</option>
+                                                    <option value="2">Masculino</option>
+                                                    <option value="1">Femenino</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" onclick="enviandoformulario"
+                                        type="submit">Enviar</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                Giorno Giovana | Rut:14.248.641-5
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <form class="formulario" id="formulario" action="#" onsubmit="enviandoformulario()">
+                                <div class="container form">
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="fecha_de_evaluacion">Fecha de evaluacion</label>
+                                            <input type="date" class="form-control is-valid" id="fecha_de_evaluacion"
+                                                value="2021-05-05" placeholder="Fecha de evaluacion" disabled>
+                                            <div class="valid-feedback">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="peso">Ingrese su peso en Kg</label>
+                                            <input type="number" class="form-control is-valid" id="peso" value=""
+                                                placeholder="Ej: 71" step="0.1">
+                                            <div class="valid-feedback">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="peso">Ingrese su altura en metros</label>
+                                            <input type="number" class="form-control is-valid" id="altura" value=""
+                                                placeholder="Ej: 1.77" step="0.01">
+                                            <div class="valid-feedback">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="form-group">
+                                                <label for="Sexo"> Sexo</label>
+                                                <select class="form-control" id="sexo">
+                                                    <option disabled selected> Escoja su sexo</option>
+                                                    <option value="2">Masculino</option>
+                                                    <option value="1">Femenino</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary"  onclick="enviandoformulario"
+                                        type="submit">Enviar</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="card">
-        <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="false" aria-controls="collapseTwo">
-                    Rambo metralleta | Rut:18-845-284-9
-                </button>
-            </h5>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
-                Le falta practicar cardio
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                    aria-expanded="false" aria-controls="collapseThree">
-                    Giorno Giovana | Rut:14.248.641-5
-                </button>
-            </h5>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-              EL futuro atleta de Chile
-            </div>
-        </div>
-    </div>
     </div>
 
 

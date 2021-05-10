@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="bootstrap" href="css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="text/javascript" src="js/validacion.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+  <b></b>
+    <title>Anime Town TV</title>
+  </b>
+
+</head>
+
+<body background="tvanimeoficial">
+
+  <div class="container my-container">
+    <div class="row align-items-start">
+      <div class="col-12">
+        <div class="jumbotron banner">
+          <div class="container">
+            <h1 class="display-4">
+              <p class="font-weight-bold">Anime Town TV</p>
+            </h1>
+            <p class="lead">Somos la entretencion mas poderosa de Animación Japonesa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-12">
+        <div class="jumbotron shingeki">
+          <a href="contactanos.html"><button type="button" class="btn btn-danger">Contactanos</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-end">
+      <div class="col-4">
+        <div class="jumbotron planes">
+          <h1 class="display-4">
+            <p class="font-weight-bold">Plan unico</p>
+          </h1>
+          <p class="lead">-Animacion completa de Toei Animation</p><br>
+          <p class="lead">-1 dispositivo movil adicional</p><br>
+          <h2>
+            <p class="font-weight-bold">$10.000</p>
+          </h2>
+          <hr class="my-4">
+          <p>IVA incluido</p>
+          <a class="btn btn-primary btn-lg" href="formulario.html" role="button">Contratar</a>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="jumbotron planes">
+          <h1 class="display-4">
+            <p class="font-weight-bold">Shonen</p>
+          </h1>
+          <p class="lead">-Animacion de estudios Madhouse, Kyoani y JC staff </p><br>
+          <p class="lead">-2 dispositivos movil adicional</p><br>
+          <h2>
+            <p class="font-weight-bold">$15.000</p>
+          </h2>
+          <hr class="my-4">
+          <p>IVA incluido</p>
+          <a class="btn btn-primary btn-lg" href="formulario.html" role="button">Contratar</a>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="jumbotron planes">
+          <h1 class="display-4">
+            <p class="font-weight-bold">Saiko</p>
+          </h1>
+          <p class="lead">-Full estudios de animacion </p><br>
+          <p class="lead">-3 dispositivos movil adicional</p><br><br>
+          <h2>
+            <p class="font-weight-bold">$22.990</p>
+          </h2>
+          <hr class="my-4">
+          <p>IVA incluido</p>
+          <a class="btn btn-primary btn-lg" href="formulario.html" role="button">Contratar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-container3">
+    <div class="row">
+        <div class="col-12">
+            <h2>
+                <p> Ingresa tus datos para calcular </p><br>
+            </h2>
+            <form class="formulario" id="formulario" action="#" onsubmit="calculandoganancia()">
+                <div class="jumbotron for">
+                    <div class="container form">
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="plazoInversion">Plazo de dias a invertir</label>
+                                <input type="number" class="form-control is-valid" id="Plazo"
+                                    value="">
+                                <div class=" valid-feedback">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="peso">Ingrese su monto a invertir</label>
+                            <input type="number" class="form-control is-valid" id="Monto" value="">
+                            <div class="valid-feedback">
+                            </div>
+                        </div><br>
+                        <div class="col-md-2 mb-8">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Pesos"
+                                value="Clp">
+                            <label class="form-check-label" for="inlineRadio1">Pesos</label>
+                        </div>
+                        <div class="col-md-2 mb-8">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Uf"
+                                value="unidadF">
+                            <label class="form-check-label" for="inlineRadio2">UF</label>
+                            <div class="valid-feedback">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-8 mb-3">
+                            <div class="form-group">
+                                <label for="tipoInversion"> Tipo de inversion</label>
+                                <select class="form-control" id="Deposito">
+                                    <option disabled selected > Escoja tipo de Deposito</option>
+                                    <option value="1">Plazo Fijo</option>
+                                    <option value="2">Plazo renovable</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="calculandoganancia()" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+</body>
+
+</html>
