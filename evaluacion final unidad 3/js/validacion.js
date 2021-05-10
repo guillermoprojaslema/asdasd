@@ -2,7 +2,7 @@
 function calculandoganancia() {
 
     var objMonto = document.getElementById("Monto");
-    var objMoneda = document.getElementsByName("inlineRadioOptions");
+    var objMoneda = document.getElementsByName("radios");
     var objDeposito = document.getElementById("Deposito").children
     var objPlazo = document.getElementById("Plazo");
 
