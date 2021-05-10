@@ -26,7 +26,7 @@ function isValidSubmitForm() {
     valid = false;
 
     var objMonto = document.getElementById("Monto");
-    var objMoneda = document.getElementsByName("currency");
+    var objMoneda = document.querySelector('input[name="currency"]:checked').value;
     var objDeposito = document.getElementById("Deposito").value;
     var objPlazo = document.getElementById("Plazo");
 
