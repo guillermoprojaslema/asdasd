@@ -49,13 +49,13 @@ function isValidSubmitForm() {
 function calculandoganancia() {
 
     var objMonto = document.getElementById("Monto");
-    var objMoneda = document.getElementsByName("currency");
+    var currency = document.querySelector('input[name="currency"]:checked').value;
     var objPlazo = document.getElementById("Plazo");
     var objDeposito = document.getElementById("Deposito").value;
 
     if (isValidSubmitForm()) {
         profit = calculateProfit(objPlazo.value, objMonto.value);
-        alert("El valor de la ganancia es " + profit + "El monto ingresado fue " + objMonto + "El tipo de moneda es " + objMoneda.value + "Los días de plazo son " + objPlazo.value + "su tipo de deposito seleccionado " + objDeposito);
+        alert("El valor de la ganancia es " + profit + "El monto ingresado fue " + objMonto.value + "El tipo de moneda es " + currency + "Los días de plazo son " + objPlazo.value + "su tipo de deposito seleccionado " + objDeposito);
     } else {
         alert('Ingrese correctamente los datos');
     }
