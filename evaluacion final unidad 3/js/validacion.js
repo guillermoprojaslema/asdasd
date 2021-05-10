@@ -26,7 +26,7 @@ function isValidSubmitForm() {
     valid = false;
 
     var objMonto = document.getElementById("Monto");
-    var objMoneda = document.querySelector('input[name="currency"]:checked').value;
+    var currency = document.querySelector('input[name="currency"]:checked').value;
     var objDeposito = document.getElementById("Deposito").value;
     var objPlazo = document.getElementById("Plazo");
 
@@ -34,7 +34,7 @@ function isValidSubmitForm() {
         objMonto.value != null &&
         objPlazo.value != "" &&
         objPlazo.value != null &&
-        (objMoneda == 'clp' && 7 <= objPlazo.value <= 90 && objMonto.value >= 10000)  || (objMoneda.value == 'uf' &&  120 <= objPlazo.value <= 365 && objMonto.value >= 5000) 
+        (currency == 'clp' && 7 <= objPlazo.value <= 90 && objMonto.value >= 10000)  || (currency == 'uf' &&  120 <= objPlazo.value <= 365 && objMonto.value >= 5000)
 
         
     ) {
