@@ -49,7 +49,7 @@ function calculandoganancia() {
     var objMonto = document.getElementById("Monto");
     var objMoneda = document.getElementsByName("currency");
     var objPlazo = document.getElementById("Plazo");
-    
+
     if (isValidSubmitForm()) {
         profit = calculateProfit(objPlazo.value, objMonto.value);
         alert('El valor de la ganancia es ' + profit + ' ' + objMoneda.value);
