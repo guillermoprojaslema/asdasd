@@ -1,90 +1,88 @@
+function checkDepositType() {
+    var depositValue = document.getElementById("Deposito").value
+
+    // Plazo Fijo
+    if (depositValue == 1) {
+
+        // Desbloquear UF
+        document.getElementById("Uf").style.visibility = "visible";
+
+    }
+    // Renovable
+    else {
+
+        // Esconder el UF
+        document.getElementById("Uf").style.visibility = "hidden";
+
+        //Esto elige pesos. De esa forma, UF se oculta, y si tiene valor, �ste es reemplazado por el valor de Pesos
+        document.querySelector('input[currency="Pesos"]:checked');
+
+
+        var currency = document.querySelector('input[name="currency"]:checked').value
+        depositValues = setDepositValues(currency); // CLP
+
+    }
+}
+
+
+/*Vamos a asumir que es CLP*/
+
+function setDepositValues(currency) {
+
+    if (currency == 'clp') {
+        var minimunSaveDays = 7;
+        var maximumSaveDays = 90;
+        var minumumAmount = 10000;
+    } else {
+        var minimunSaveDays = 120;
+        var maximumSaveDays = 365;
+        var minumumAmount = 5000;
+    }
+    return [minimunSaveDays, maximumSaveDays, minumumAmount]
+}
+
+function calculateProfit(time, amount) {
+    return time * amount * 0.0047;
+}
+
+function isValidSubmitForm() {
+
+    valid = false;
+
+    var objMonto = document.getElementById("Monto");
+    var objMoneda = document.getElementsByName("currency");
+    var objDeposito = document.getElementById("Deposito").value;
+    var objPlazo = document.getElementById("Plazo");
+
+
+    if (objMonto.value != "" &&
+        objMonto.value != null &&
+        objPlazo.value != "" &&
+        objPlazo.value != null &&
+        (objMoneda.value == 'clp' || objMoneda.value == 'uf') &&
+
+        ((objDeposito.value == '1' && 7 <= objPlazo.value <= 90) || (objDeposito.value == '2' && objPlazo.value >= 120))
+    ) {
+        valid = true;
+    }
+
+    return valid;
+
+}
+
 
 function calculandoganancia() {
 
     var objMonto = document.getElementById("Monto");
-    var objMoneda = document.getElementsByName("radios");
-    var objDeposito = document.getElementById("Deposito").children
+    var objMoneda = document.getElementsByName("currency");
+    var objDeposito = document.getElementById("Deposito").value;
     var objPlazo = document.getElementById("Plazo");
 
-  
 
-    if ( objMonto.value != "" &&
-        objMonto.value != null &&
-        objPlazo.value != "" &&
-        objPlazo.value != null) {
-        objGanancia = (objPlazo.value * objMonto.value * 0.0047)
-        console.log("calculando ganancia");
-
-        for (i = 1; i < objDeposito.length; i++) {
-            var objOption = objDeposito[i];
-
-
-            for (i = 0; i < objMoneda.length; i++) {
-                var radio_moneda = objMoneda[i];
-
-
-                if (objOption.value == "") {
-                    alert(" Seleccione un tipo de inversion")
-                    break
-                }
-
-                if(radio_moneda.value = ""){
-                    alert("seleccione un tipo de moneda")
-                    break
-                }
-            
-
-
-                // Condiciones para plazo fijo
-
-                if (objOption.value == "1" && radio_moneda.value == "0") {
-
-
-                    if (objPlazo.value < 7 && objPlazo.value > 90) {
-                        alert("El tiempo de inversion es de 7 a 90 dias");
-                        return false;
-                    }
-                    if (objMonto.value <= 10000) {
-                        alert("el monto minimo a invertir es de 10000 Pesos");
-                        return false;
-
-                    }
-
-
-                    if (radio_moneda.value == "1") {
-
-                        if (objPlazo.value < 120 && objPlazo.value > 365) {
-                            alert("El tiempo de inversion es de 120 dias hasta 1 año");
-                            return false;
-                        }
-                        if (objMonto.value < 5000) {
-                            alert("El monto minimo es de 5000");
-                            return false;
-                        }
-                    }
-
-
-                }
-
-                // condiciones para plazo renovable
-
-                if (objOption.value == "2" && radio_moneda.value == "1") {
-
-
-
-                    if (objPlazo.value >= 120 && objPlazo.value <= 365) {
-                        alert("El tiempo de inversion es desde 120 dias hasta 1 año");
-                        return false;
-                    }
-                    if (objMonto.value < 5000) {
-                        alert(" El monto minimo es de 5000");
-                        return false;
-                    }
-
-
-                }
-            }
-        }
+    if (isValidSubmitForm()) {
+        profit = calculateProfit(objPlazo.value, objMonto.value);
+        alert('El valor de la ganancia es ' + profit + ' ' + objMoneda.value);
+    } else {
+        // ALERT CON LOS DATOS ERR�NEOS
     }
-
 }
