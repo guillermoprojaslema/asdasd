@@ -2,7 +2,7 @@ function checkDepositType() {
     var depositValue = document.getElementById("Deposito").value
     // Plazo Fijo
     if (depositValue == 1) {
-    // Desbloquear UF
+        // Desbloquear UF
         document.getElementById("uf_label").style.visibility = "visible";
     }
     // Renovable
@@ -34,9 +34,10 @@ function isValidSubmitForm() {
         objMonto.value != null &&
         objPlazo.value != "" &&
         objPlazo.value != null &&
-        (currency == 'clp' && 7 <= objPlazo.value <= 90 && objMonto.value >= 10000)  || (currency == 'uf' &&  120 <= objPlazo.value <= 365 && objMonto.value >= 5000)
+        ((currency == 'clp' && 7 <= objPlazo.value <= 90 && objMonto.value >= 10000) ||
+            (currency == 'uf' && 120 <= objPlazo.value <= 365 && objMonto.value >= 5000))
 
-        
+
     ) {
         valid = true;
     }
@@ -54,7 +55,7 @@ function calculandoganancia() {
 
     if (isValidSubmitForm()) {
         profit = calculateProfit(objPlazo.value, objMonto.value);
-        alert("El valor de la ganancia es " + profit +  "El monto ingresado fue " + objMonto + "El tipo de moneda es " + objMoneda.value + "Los días de plazo son " + objPlazo.value + "su tipo de deposito seleccionado " + objDeposito);
+        alert("El valor de la ganancia es " + profit + "El monto ingresado fue " + objMonto + "El tipo de moneda es " + objMoneda.value + "Los días de plazo son " + objPlazo.value + "su tipo de deposito seleccionado " + objDeposito);
     } else {
         alert('Ingrese correctamente los datos');
     }
