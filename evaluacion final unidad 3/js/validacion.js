@@ -2,17 +2,17 @@ function checkDepositType() {
     var depositValue = document.getElementById("Deposito").value
     // Plazo Fijo
     if (depositValue == 1) {
-        // Desbloquear UF
+    // Desbloquear UF
         document.getElementById("uf_label").style.visibility = "visible";
     }
     // Renovable
     else {
-        // Esconder el UF
+        //  UF escondido
         document.getElementById("uf_label").style.visibility = "hidden";
 
-        //Esto elige pesos. De esa forma, UF se oculta, y si tiene valor, �ste es reemplazado por el valor de Pesos
-        checkBox = document.getElementById("Pesos");
-        checkBox.checked = true;
+        //se elige automaticamente pesos
+        radioPesos = document.getElementById("Pesos");
+        radioPesos.checked = true;
     }
 }
 
@@ -34,9 +34,9 @@ function isValidSubmitForm() {
         objMonto.value != null &&
         objPlazo.value != "" &&
         objPlazo.value != null &&
-        (objMoneda.value == 'clp' || objMoneda.value == 'uf') &&
+        (objMoneda == 'clp' && 7 <= objPlazo.value <= 90 && objMonto.value >= 10000)  || (objMoneda.value == 'uf' &&  120 <= objPlazo.value <= 365 && objMonto.value >= 5000) 
 
-        ((objDeposito.value == '1' && 7 <= objPlazo.value <= 90) || (objDeposito.value == '2' && objPlazo.value >= 120))
+        
     ) {
         valid = true;
     }
@@ -50,10 +50,11 @@ function calculandoganancia() {
     var objMonto = document.getElementById("Monto");
     var objMoneda = document.getElementsByName("currency");
     var objPlazo = document.getElementById("Plazo");
+    var objDeposito = document.getElementById("Deposito").value;
 
     if (isValidSubmitForm()) {
         profit = calculateProfit(objPlazo.value, objMonto.value);
-        alert('El valor de la ganancia es ' + profit + ' ' + objMoneda.value);
+        alert("El valor de la ganancia es " + profit +  "El monto ingresado fue " + objMonto + "El tipo de moneda es " + objMoneda.value + "Los días de plazo son " + objPlazo.value + "su tipo de deposito seleccionado " + objDeposito);
     } else {
         alert('Ingrese correctamente los datos');
     }

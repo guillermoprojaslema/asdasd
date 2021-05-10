@@ -14,7 +14,7 @@ height: 500px;
  .form-check-label{
      position: relative;
      left: 50px;
-     top: 40px;
+     top: 60px;
  }
 
 .ban {
@@ -22,6 +22,8 @@ height: 500px;
     background-color: rgb(241, 241, 46);
 }
 
-.lead {
-    
+.planes {
+
+  height: 350px;
+  background-color: rgb(223, 39, 39);
 }

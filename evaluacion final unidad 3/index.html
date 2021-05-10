@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="bootstrap" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
 
@@ -24,146 +24,121 @@
 
 <body>
 
-<div class="container my-container">
-    <div class="row align-items-start">
-        <div class="col-12">
-            <div class="jumbotron ban">
-                <div class="container">
-                    <h1 class="display-4">
-                        <p class="font-weight-bold">Banco faster</p>
-                    </h1>
-                    <p class="lead">En tiempos dificiles, cuenta con nosotros</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row align-items-center">
-        <div class="col-12">
-            <div class="jumbotron contact">
-                <a href="contactanos.html">
-                    <button type="button" class="btn btn-danger">Contactar</button>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="row align-items-end">
-        <div class="col-4">
-            <div class="jumbotron planes">
-                <h1 class="display-4">
-                    <p class="font-weight-bold"> Plazo fijo</p>
-                </h1>
-                <p class="lead"></p> Invierte con nosotros en pesos o en uf <br>
-                <h2>
-                    <p class="font-weight-bold">El tiempo de inversion es de 7 a 90 días</p>
-                </h2>
-                <hr class="my-4">
-                <a class="btn btn-primary btn-lg" href="formulario.html" role="button">Solicitar</a>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="jumbotron planes">
-                <h1 class="display-4">
-                    <p class="font-weight-bold">Renovable</p>
-                </h1>
-                <p class="lead"></p> Invierte con nosotros en pesos<br>
-                <p class="lead"></p><br>
-                <h2>
-                    <p class="font-weight-bold">$15.000</p>
-                </h2>
-                <hr class="my-4">
-                <p>IVA incluido</p>
-                <a class="btn btn-primary btn-lg" href="formulario.html" role="button">Contratar</a>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="jumbotron planes">
-                <h1 class="display-4">
-                    <p class="font-weight-bold">Saiko</p>
-                </h1>
-                <p class="lead">-Full estudios de animacion </p><br>
-                <p class="lead">-3 dispositivos movil adicional</p><br><br>
-                <h2>
-                    <p class="font-weight-bold">$22.990</p>
-                </h2>
-                <hr class="my-4">
-                <p>IVA incluido</p>
-                <a class="btn btn-primary btn-lg" href="formulario.html" role="button">Contratar</a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container my-container3">
-    <div class="row">
-        <div class="col-12">
-            <h2>
-                <p> Ingresa tus datos para calcular </p><br>
-            </h2>
-            <form class="formulario" id="formulario" action="#" onsubmit="calculandoganancia()">
-                <div class="jumbotron for">
-                    <div class="container form">
-
-                        <div class="form-row">
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <label for="tipoInversion"> Tipo de inversion</label>
-                                    <select class="form-control" id="Deposito" name="TipoDeposito"
-                                            onchange="checkDepositType()">
-                                        <option disabled selected> Escoja tipo de Deposito</option>
-                                        <option value="1">Plazo Fijo</option>
-                                        <option value="2">Plazo renovable</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="form-row">
-                            <div class="col-md-6">
-                                <label for="plazoInversion">Plazo de dias a invertir</label>
-                                <input type="number" class="form-control is-valid" id="Plazo"
-                                       value="">
-                                <div class=" valid-feedback">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="col-md-6">
-                                <div class="form-check-inline">
-                                    <label class="form-check-label" >
-                                        <input type="radio" class="form-check-input" name="currency" id="Pesos"
-                                               value="clp">$CLP
-                                    </label>
-                                </div>
-                                <div class="form-check-inline" id="uf_label">
-                                    <label class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="currency" id="Uf" value="uf">$UF
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <br>
-                        <br>
-                        <br>
-
-
-                        <div class="form-row">
-                            <div class="col-md-6">
-                                <label for="Monto">Ingrese su monto a invertir</label>
-                                <input type="number" class="form-control is-valid" id="Monto" value="">
-                            </div>
-                        </div>
-                        <br>
-                        <button class="btn btn-primary" onsubmit="calculandoganancia()" type="submit">Enviar
-                        </button>
+    <div class="container my-container">
+        <div class="row align-items-start">
+            <div class="col-12">
+                <div class="jumbotron ban">
+                    <div class="container">
+                        <h1 class="display-4">
+                            <p class="font-weight-bold">Banco faster</p>
+                        </h1>
+                        <p class="lead">En tiempos dificiles, cuenta con nosotros</p>
                     </div>
                 </div>
-            </form>
+            </div>
+        </div>
+        <div class="row align-items-end">
+            <div class="col-md-6 mb-3">
+                <div class="jumbotron planes">
+                    <h1 class="display-4">
+                        <p class="font-weight-bold"> Plazo fijo</p>
+                    </h1>
+                    <p class="lead"></p> Invierte con nosotros en pesos o en uf <br>
+                    <h2>
+                        <p class="font-weight-bold">Invierte plazo fijo sin riesgo</p>
+                    </h2>
+                    <hr class="my-4">
+                    <a class="btn btn-primary btn-lg" href="formulario.html" role="button">Solicitar</a>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="jumbotron planes">
+                    <h1 class="display-4">
+                        <p class="font-weight-bold">Renovable</p>
+                    </h1>
+                    <p class="lead">Invierte con nosotros en pesos</p>
+                    <p class="lead"></p>
+                    <h2>
+                        <p class="font-weight-bold"> vuelve a ahorrar </p>
+                    </h2>
+                    <hr class="my-4">
+                    <a class="btn btn-primary btn-lg" href="formulario.html" role="button">Solicitar</a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
+    <div class="container my-container3">
+        <div class="row">
+            <div class="col-12">
+                <h2>
+                    <p> Ingresa tus datos para calcular </p><br>
+                </h2>
+                <form class="formulario" id="formulario" action="#" onsubmit="calculandoganancia()">
+                    <div class="jumbotron for">
+                        <div class="container form">
+
+                            <div class="form-row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label for="tipoInversion"> Tipo de inversion</label>
+                                        <select class="form-control" id="Deposito" name="TipoDeposito"
+                                            onchange="checkDepositType()">
+                                            <option disabled selected> Escoja tipo de Deposito</option>
+                                            <option value="1">Plazo Fijo</option>
+                                            <option value="2">Plazo renovable</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <label for="plazoInversion">Plazo de dias a invertir</label>
+                                    <input type="number" class="form-control is-valid" id="Plazo" value="">
+                                    <div class=" valid-feedback">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="currency" id="Pesos"
+                                                value="clp">$CLP
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline" id="uf_label">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="currency" id="Uf"
+                                                value="uf">$UF
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br>
+                            <br>
+                            <br>
+
+
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <label for="Monto">Ingrese su monto a invertir</label>
+                                    <input type="number" class="form-control is-valid" id="Monto" value="">
+                                </div>
+                            </div>
+                            <br>
+                            <button class="btn btn-primary" onsubmit="calculandoganancia()" type="submit">Enviar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
 
 
 </body>
